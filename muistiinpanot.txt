@@ -1,0 +1,36 @@
+// Function expression to check if an array contains a specific number
+var containsNumber = function(numbers, aNumber) {
+    for (var i = 0; i < numbers.length; i++) {
+        if (numbers[i] === aNumber) {
+            return true;
+        }
+    }
+    return false;
+};
+
+// Example array
+var elementsArray = [6, 4, 2, 5, 9, 7, 5, 7, 2];
+
+// Number to search
+var numberToSearch = 5;
+
+// Check if the array contains the number and display the result on the web page
+var resultElement = document.getElementById("result");
+
+if (containsNumber(elementsArray, numberToSearch)) {
+    resultElement.textContent = "Array contains the number " + numberToSearch;
+} else {
+    resultElement.textContent = "Array doesn't contain the number " + numberToSearch;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contains Number Check</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
