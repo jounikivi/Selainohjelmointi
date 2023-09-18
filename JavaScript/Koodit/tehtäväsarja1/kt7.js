@@ -5,12 +5,12 @@ const grades = points.map((ptn) => {
   if (ptn >= 85) {
     return 5;
   }
-  else if (ptn >=70) {
+  else if (ptn >= 70) {
     return 4
   }
   else if (ptn >= 60) {
     return 2
-  }else if (ptn >=50){
+  }else if (ptn >= 50){
     return 1
   }
 });
