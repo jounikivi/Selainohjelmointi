@@ -4,7 +4,7 @@ function isLeapYear(year) {
   } else {
     return false;
   }
-}
+
 
 function checkYear() {
   var year = document.getElementById("yearInput").value;
