@@ -1,6 +1,20 @@
-//esimerkit String metodin käytöst
+/*var taulukko1 = [1, 2];
+var taulukko2 = [3, 4];
+var yhdistetty = taulukko1.concat(taulukko2); // Luo uuden taulukon 'yhdistetty' ilman että 'taulukko1' tai 'taulukko2' muuttuvat
+console.log(yhdistetty); // Tuloste: [1, 2, 3, 4]
+console.log(taulukko1); // Tuloste: [1, 2] (alkuperäinen 'taulukko1' säilyy muuttumattomana)
+console.log(taulukko2); // Tuloste: [3, 4] (alkuperäinen 'taulukko2' säilyy muuttumattomana)
 
-// 1 Substring-metodi
+/*
+// Luodaan taulukko 'autot' ja alustetaan se kahdella merkkijonolla
+var autot = ["opel", "mersu"];
+// Käytetään 'push'-metodia lisäämään "mazda" taulukon loppuun
+autot.push("mazda");
+// Tulostetaan muokattu 'autot'-taulukko
+console.log(autot);
+
+//esimerkit String metodin käytöst
+/* 1 Substring-metodi
 const esimString1 = "Hello World;";
 const Substring = esimString1.substring(0, 6);
 console.log(Substring);
