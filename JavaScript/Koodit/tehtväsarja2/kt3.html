@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="../tehtväsarja2/kt3.js"></script>
-</head>
-<body>
-  <p id="result"></p>
-  <script>
-    document.getElementById('result').innerHTML = covertToMinutestFormat('3.40')
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../tehtväsarja2/kt3.js"></script>
+  </head>
+  <body>
+    <p id="result"></p>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("result").innerHTML =
+          convertToMinutesFormat("3.40");
+      });
+    </script>
+  </body>
 </html>
