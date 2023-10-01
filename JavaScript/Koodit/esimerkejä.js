@@ -1,11 +1,29 @@
-/*var taulukko1 = [1, 2];
+function summa(...numerot) {
+  let tulos = 0;
+  for (let numero of numerot) {
+    tulos += numero;
+  }
+  return tulos;
+}
+
+console.log(summa(9, 8, 7, 6));
+console.log(summa(51, 10));
+console.log(summa());
+
+/*function tervehdi(nimi = "Matti Meikäläinen") {
+  console.log("hei," + nimi + "!");
+}
+tervehdi();
+tervehdi("Pekka Puupää");
+
+var taulukko1 = [1, 2];
 var taulukko2 = [3, 4];
 var yhdistetty = taulukko1.concat(taulukko2); // Luo uuden taulukon 'yhdistetty' ilman että 'taulukko1' tai 'taulukko2' muuttuvat
 console.log(yhdistetty); // Tuloste: [1, 2, 3, 4]
 console.log(taulukko1); // Tuloste: [1, 2] (alkuperäinen 'taulukko1' säilyy muuttumattomana)
 console.log(taulukko2); // Tuloste: [3, 4] (alkuperäinen 'taulukko2' säilyy muuttumattomana)
 
-/*
+
 // Luodaan taulukko 'autot' ja alustetaan se kahdella merkkijonolla
 var autot = ["opel", "mersu"];
 // Käytetään 'push'-metodia lisäämään "mazda" taulukon loppuun
