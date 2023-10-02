@@ -1,34 +1,5 @@
-js.js
-var containsNumber = function(numbers, aNumber) {
-    for (var i = 0; i < numbers.length; i++) {
-        if (numbers[i] === aNumber) {
-            return true;
-        }
-    }
-    return false;
-};
+hae näistä tietoa 
+json vs javascript object
+json limitations
 
-var elementsArray = [6, 4, 2, 5, 9, 7, 5, 7, 2];
-
-var numberToSearch = 5;
-
-var resultElement = document.getElementById("result");
-
-if (containsNumber(elementsArray, numberToSearch)) {
-    resultElement.textContent = "Array contains the number " + numberToSearch;
-} else {
-    resultElement.textContent = "Array doesn't contain the number " + numberToSearch;
-}
-
-____________________________________________________________________________________________________________________
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contains Number Check</title>
-</head>
-<body>
-    <p id="result"></p>
-    <script src="script.js"></script>
-</body>
-</html>
+käytä myös aikaa jsonin tutkimiseen ja opetteelun
