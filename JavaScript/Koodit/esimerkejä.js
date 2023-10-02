@@ -1,4 +1,16 @@
-function summa(...numerot) {
+/*const musician = {
+  realName: "Gordon Matthew Thomas Sumner",
+  name: "Sting",
+  instrument: {
+    type: "bass",
+  },
+};
+
+for (const property in musician) {
+  console.log(`${property}: ${musician[property]}`);
+}*/
+
+/*function summa(...numerot) {
   let tulos = 0;
   for (let numero of numerot) {
     tulos += numero;
@@ -9,7 +21,7 @@ function summa(...numerot) {
 console.log(summa(9, 8, 7, 6));
 console.log(summa(51, 10));
 console.log(summa());
-
+*/
 
 /*function tervehdi(nimi = "Matti Meikäläinen") {
   console.log("hei," + nimi + "!");
