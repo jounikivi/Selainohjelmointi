@@ -15,15 +15,17 @@ console.log(summa());
 }
 tervehdi();
 tervehdi("Pekka Puupää");
-
+*/
+/*
 var taulukko1 = [1, 2];
 var taulukko2 = [3, 4];
 var yhdistetty = taulukko1.concat(taulukko2); // Luo uuden taulukon 'yhdistetty' ilman että 'taulukko1' tai 'taulukko2' muuttuvat
 console.log(yhdistetty); // Tuloste: [1, 2, 3, 4]
 console.log(taulukko1); // Tuloste: [1, 2] (alkuperäinen 'taulukko1' säilyy muuttumattomana)
 console.log(taulukko2); // Tuloste: [3, 4] (alkuperäinen 'taulukko2' säilyy muuttumattomana)
+*/
 
-
+/*
 // Luodaan taulukko 'autot' ja alustetaan se kahdella merkkijonolla
 var autot = ["opel", "mersu"];
 // Käytetään 'push'-metodia lisäämään "mazda" taulukon loppuun
@@ -50,10 +52,12 @@ const muokattuLause = lause.replace(etsittavaSana, korvaaSana);
 console.log(lause);
 console.log(muokattuLause);
 
-/*Esimerkki tehtävään 3 b
+/*
+Esimerkki tehtävään 3 b
 var määrä = 36.5;
 var text1 = "Minulla on";
 var text2 = " eruoa";
 var tulos = `${text1} ${määrä}${text2}`;
 var tulos = text1 + määrä + text2;
-console.log(tulos);*/
+console.log(tulos);
+*/
