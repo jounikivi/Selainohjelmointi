@@ -10,6 +10,7 @@ console.log(summa(9, 8, 7, 6));
 console.log(summa(51, 10));
 console.log(summa());
 
+
 /*function tervehdi(nimi = "Matti Meikäläinen") {
   console.log("hei," + nimi + "!");
 }
