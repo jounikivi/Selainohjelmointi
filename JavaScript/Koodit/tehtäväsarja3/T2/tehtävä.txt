@@ -1,0 +1,14 @@
+2. Object destructuring. (4 * 0,25 = 1 point)
+You have the following object.
+const musician = {
+  name: 'Sting',
+  realName: 'Gordon Matthew Thomas Sumner’,
+  instrument: {
+    type: 'bass'
+  }
+};
+Use object destructuring to do the following assignments.
+a. Read the attributes name and instrument into the variables name and instrument.
+b. Read the attributes name and instrument into the variables nameOfArtist and instumentOfArtist.
+c. Read the type of the instrument into a variable instrumentTypeOfArtist.
+d. Read the make of the instrument into a variable instrumentMakeOfArtist. If the attribute is missing from the current object, give it a default value “unknown”.
