@@ -1,30 +1,35 @@
 function isLeapYear(vuosi) {
-  if ((vuosi % 4 === 0 && vuosi % 100 !== 0) || vuosi % 400 === 0) {
-    return true;
-  } else {
-    return false;
+  if (vuosi === undefined) {
+   throw new Error("Missing argument year error");
   }
-}
-
-function checkYear() {
+ 
+  if (isNaN(vuosi) || !Number.isInteger(Number(vuosi))) {
+   throw new Error("Non-integer argument year error");
+  }
+ 
+  if ((vuosi % 4 === 0 && vuosi % 100 !== 0) || vuosi % 400 === 0) {
+   return true;
+  } else {
+   return false;
+  }
+ }
+ 
+ function checkYear() {
   var vuosi = document.getElementById("yearInput").value;
   var resultDiv = document.getElementById("result");
-
+ 
   try {
-    if (isLeapYear(vuosi)) {
-      resultDiv.innerText = "Vuosi " + vuosi + " on karkausvuosi";
-    } else {
-      resultDiv.innerText = "Vuosi " + vuosi + " ei ole karkausvuosi";
-    }
+   if (isLeapYear(vuosi)) {
+    resultDiv.innerText = "Vuosi " + vuosi + " on karkausvuosi";
+   } else {
+    resultDiv.innerText = "Vuosi " + vuosi + " ei ole karkausvuosi";
+   }
   } catch (e) {
-    // Virheen käsittely.
-    if (e.name === "TypeError") {
-      resultDiv.innerText = "Syötä kelvollinen vuosi.";
-    } else {
-      resultDiv.innerText = "Tapahtui virhe: " + e.message;
-    }
+   // Virheen käsittely.
+   resultDiv.innerText = "Tapahtui virhe: " + e.message;
   }
-}
+ }
+ 
 
 /*function isLeapYear(year) {
   if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
