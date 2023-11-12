@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ilmapallo</title>
+<style>
+.balloon {
+  font-size: 100px;
+}
+</style>
+</head>
+<body>
+<div class="balloon">🎈</div>
+
+<script>
+const balloon = document.querySelector('.balloon');
+
+// Alusta ilmapallon koko
+let balloonSize = 100;
+
+// Lisää tapahtumakäsittelijät nuolinäppäimille
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowUp') {
+    // Paisuta ilmapalloa
+    balloonSize *= 1.1;
+  } else if (event.key === 'ArrowDown') {
+    // Desinfioi ilmapalloa
+    balloonSize *= 0.9;
+  }
+
+  // Varmista, että ilmapallon koko pysyy välillä 10-300 pikseliä
+  balloonSize = Math.max(10, Math.min(300, balloonSize));
+
+  // Aseta ilmapallon koko
+  balloon.style.fontSize = `${balloonSize}px`;
+
+  // Jos ilmapallo räjähtää, poista tapahtumakäsittelijät
+  if (balloonSize >= 300) {
+    balloon.innerHTML = '💥';
+    document.removeEventListener('keydown', handleKeyDown);
+  }
+});
+</script>
+</body>
+</html>
