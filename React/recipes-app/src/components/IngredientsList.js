@@ -10,3 +10,5 @@ export const IngredientsList = ({list}) => {
     </ul>
   )
 }
+
+export default IngredientsList;

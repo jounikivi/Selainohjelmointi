@@ -16,3 +16,5 @@ export const Menu = () => {
     </article>
   )
 }
+
+export default Menu;

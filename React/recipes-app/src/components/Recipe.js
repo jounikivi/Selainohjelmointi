@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-export default function Recipe ({name, ingredients, stpes}) {
+export const Recipe = () => {
   return (
     <section id="baked-salom">
       <h1>{}name</h1>
@@ -18,3 +18,4 @@ export default function Recipe ({name, ingredients, stpes}) {
     </section>
   )
 }
+export default Recipe;
