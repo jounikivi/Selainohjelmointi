@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Ingredient = () => {
+export const Ingredient = ({amount, measurement, name}) => {
   return (
-    <div>Ingredient</div>
+    <li>
+      {amount} {measurement} {name}
+    </li>
   )
 }
